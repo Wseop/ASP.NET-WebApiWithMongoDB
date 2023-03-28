@@ -60,3 +60,19 @@ builder.Services.AddSingleton<ProfileService>();
 ```
 ### 5. Controller 추가
 - [ProfileController.cs](https://github.com/Wseop/ASP.NET-WebApiWithMongoDB/blob/main/WebApiMongoDB/Controllers/ProfileController.cs)
+## Swagger Middleware 추가
+### 패키지 설치
+- Swashbuckle.AspNetCore.Swagger
+- Swashbuckle.AspNetCore.SwaggerGen
+- Swashbuckle.AspNetCore.SwaggerUI
+### 서비스 컬렉션에 추가
+```c#
+// Program.cs
+builder.Services.AddSwaggerGen();
+...
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+```
