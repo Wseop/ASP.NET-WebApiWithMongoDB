@@ -1,5 +1,5 @@
 # ASP.NET-WebApiWithMongoDB
-MongoDB를 사용한 ASP.NET Web Api 예제
+MongoDB를 사용한 ASP.NET Web Api 개발 환경을 구축하는 방법을 정리해둔 페이지입니다.
 ## 개발 환경
 - **IDE** : Visual Studio 2022
 - **Framework** : ASP.NET Core 6
