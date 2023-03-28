@@ -13,7 +13,17 @@ builder.Services.Configure<ProfileDatabaseSettings>(
 
 builder.Services.AddSingleton<ProfileService>();
 
+// Swagger 미들웨어 추가
+builder.Services.AddSwaggerGen();
+
 var app = builder.Build();
+
+// Swagger 미들웨어 추가
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
 // Configure the HTTP request pipeline.
 
