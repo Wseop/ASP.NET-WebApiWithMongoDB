@@ -76,3 +76,5 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 ```
+### Swagger Index Page
+![Swagger](https://github.com/Wseop/ASP.NET-WebApiWithMongoDB/blob/main/img/swagger_index.JPG)
